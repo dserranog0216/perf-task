@@ -14,10 +14,21 @@ def Game(card1, card2):
   print("dealers hand:",dealer)
   hand = ("your hand, card 1: ", card1, "card 2: ", card2 )
   total = card1+card2
-  print(total)
+  print(hand)
+  print("total:", total)
   next = (input("Hit or stand?"))
-  if next == "stand" and dealer > hand :
-    print("You lost")
+  if next=="stand":
+    print("stand")
+  else:
+    print("dealers hand:", dealer + dealer)
+    print("Your hand:",total + card1)
+    if total > 21:
+      print("You lose")
+  
+  
+    
+
+    
     
 
 
